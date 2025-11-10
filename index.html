@@ -8,16 +8,21 @@
 <body style="background-color: #414141; color: aliceblue;">
     <h1 style="text-decoration: underline;">To-Do List</h1>
     <label>Enter Your Task: </label>
-    <input type="text" >
+    <input type="text" id="task" >
     <br>
     <br>
     <label>Category: </label>
-    <input type="text" style="margin-left: 45px;">
+    <input id="category" type="text" style="margin-left: 45px;">
     <br>
-    <div style="background-color: blanchedalmond; margin-right: 300px;">
-        <ul style="color: black; text-align: left;">Tasks to Perform
+    <br>
+    <button id="submit" style="border-radius: 80px; padding: 6px;" >Add Task</button>
+    <div style="background-color: blanchedalmond;">
+        <ul id="urgent" style="color: black;">Urgent Tasks to Perform
             
         </ul>
+    </div>
+    <div style="background-color: blanchedalmond;">
+        <ul id="notUrgent" style="color: black;">Not Urgent Task to Perform</ul>
     </div>
     <script src="solution.js"></script>
 </body>

@@ -85,11 +85,18 @@
       taskDiv.className = "task";
 
       taskDiv.innerHTML = `
-        <div class="title">${title}</div>
+        <div>
+            <div class="title">${title}</div>
         <div class="desc">${desc}</div>
+        <button id="delete">Delete</button>
+            </div>
       `;
 
       document.getElementById("taskList").appendChild(taskDiv);
+
+      document.getElementById('delete').addEventListener('click', (e) => {
+        e.target.parentNode.remove();
+      })
     }
 
     function saveTask(title, description) {
